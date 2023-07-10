@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="assets/awesome-books_logo.svg" alt="awesome-books_logo">
+                <h1 class="brand-name">Awesome Books</h1>
+            </div>
+            <ul class="nav-list">
+                <li class="list">List</li>
+                <li class="add-new">Add new</li>
+                <li class="contact">Contact</li>
+            </ul>
+        </nav>
+
+    </header>   
+ <main>
+    <p class="date"></p>
+    <section id="list">
+        <h2 class="list-title">All awesome books</h2>
+        <ul id="book-container">
+        </ul>
+    </section>
+    
+    <form class="form" id="add-new">
+        <h2>Add a new book</h2>
+        <input required type="text" id="title" class="book-title" placeholder="Title">
+        <input required type="text" id="author" class="book-author" placeholder="Author">
+        <button class="add" id="add" type="submit">Add</button>
+    </form>
+
+    <section class="content" id="contact">
+        <h2>Contact information</h2>
+        <div class="sub-title">
+            <p>Do you have any questions or you just want to say "Hello"?</p>
+            <p>You can reach out to us!</p>
+        </div>
+        <ul class="contact-info">
+            <li><span class="contact-label">Our mail:</span><span>awesome_books@awesome-mail.com</span></li>
+            <li><span class="contact-label">Our phone:</span><span>+123456789</span></li>
+            <li><span class="contact-label">Our address:</span><span>Kubo-cho 123, Matsusaka City, Japan</span></li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>Copyright...</p>
+</footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
