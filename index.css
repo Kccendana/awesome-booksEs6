@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='84' viewBox='0 0 84 84' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2374d7e7' fill-opacity='0.14'%3E%3Cpath d='M84 23c-4.417 0-8-3.584-8-7.998V8h-7.002C64.58 8 61 4.42 61 0H23c0 4.417-3.584 8-7.998 8H8v7.002C8 19.42 4.42 23 0 23v38c4.417 0 8 3.584 8 7.998V76h7.002C19.42 76 23 79.58 23 84h38c0-4.417 3.584-8 7.998-8H76v-7.002C76 64.58 79.58 61 84 61V23zM59.05 83H43V66.95c5.054-.5 9-4.764 9-9.948V52h5.002c5.18 0 9.446-3.947 9.95-9H83v16.05c-5.054.5-9 4.764-9 9.948V74h-5.002c-5.18 0-9.446 3.947-9.95 9zm-34.1 0H41V66.95c-5.053-.502-9-4.768-9-9.948V52h-5.002c-5.184 0-9.447-3.946-9.95-9H1v16.05c5.053.502 9 4.768 9 9.948V74h5.002c5.184 0 9.447 3.946 9.95 9zm0-82H41v16.05c-5.054.5-9 4.764-9 9.948V32h-5.002c-5.18 0-9.446 3.947-9.95 9H1V24.95c5.054-.5 9-4.764 9-9.948V10h5.002c5.18 0 9.446-3.947 9.95-9zm34.1 0H43v16.05c5.053.502 9 4.768 9 9.948V32h5.002c5.184 0 9.447 3.946 9.95 9H83V24.95c-5.053-.502-9-4.768-9-9.948V10h-5.002c-5.184 0-9.447-3.946-9.95-9zM50 50v7.002C50 61.42 46.42 65 42 65c-4.417 0-8-3.584-8-7.998V50h-7.002C22.58 50 19 46.42 19 42c0-4.417 3.584-8 7.998-8H34v-7.002C34 22.58 37.58 19 42 19c4.417 0 8 3.584 8 7.998V34h7.002C61.42 34 65 37.58 65 42c0 4.417-3.584 8-7.998 8H50z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
+}
+
+header {
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #d4d4d4;
+}
+
+img.logo {
+  width: 44px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0.25em;
+  border: 2px solid;
+}
+
+ul.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+ul.nav-list li {
+  cursor: pointer;
+  padding: 0.25em;
+}
+
+ul.nav-list li:hover {
+  background-color: rgba(76, 143, 215, 0.685);
+}
+
+main {
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  top: 5px;
+  right: 3%;
+  font-weight: 600;
+}
+
+h1 {
+  color: black;
+  font-family: 'Yeseva One', cursive;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+ul.contact-info {
+  padding-left: 1em;
+  margin-top: 0.5em;
+}
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+span.contact-label {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+ul#book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#book-container li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 400px;
+  padding: 0.5em;
+  padding-right: 1em;
+}
+
+#book-container > li:nth-child(odd) {
+  background-color: rgba(210, 203, 203, 0.457);
+}
+
+hr {
+  width: 100px;
+  border-color: black;
+}
+
+button {
+  padding: 0.25em 0.5em;
+  box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.75);
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  border: 2px solid black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 300px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+input {
+  width: 100%;
+  font-size: 1em;
+  line-height: 20px;
+  padding: 0.25em;
+  border: 2px solid black;
+}
+
+#add-new,
+section#contact {
+  display: none;
+}
+
+footer {
+  padding: 1em;
+  margin: 0.5em;
+  font-size: 1em;
+  border: 2px solid;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
